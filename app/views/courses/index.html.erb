@@ -3,7 +3,7 @@
 <ul>
   <% @courses.each do |course| %>
     <li>
-      <%= link_to course.name, course %> |  <%= link_to 'Edit', edit_course_path(:id) %>
+      <%= link_to course.name, course %> |  <%= link_to 'Edit', edit_course_path(course) %>
     </li>
   <% end %>
 </ul>
